@@ -7,6 +7,72 @@ and robust feature sets.
 
 ---
 
+## (Neo)Vim: the Text Editor
+
+(Neo)Vim is just a text editor, when people say "I use Vim", most of the time, they meant `Vim Motion`.
+
+While you can get a GUI for it, the binary is meant to be executed in a terminal emulator.
+Should you move on and become a software dev/engr, (likely) at one point, you will have to `ssh`
+into a remote server and make some changes using Vim.
+
+For day-to-day use, I use Neovim, and for the rest of the workshop, we will be focusing more NeoVim,
+but the vim motion is the same, and personally I find Lua is a lot easier to read than VimScript.
+
+Like other modern text editor, Neovim is customizable, has native support for Language Server Protocol,
+code completion, diagnostics, snippets, and a lot of community support, plugins, and rich ecosystem.
+
+```
+:help config
+```
+
+## Vim Motion
+
+Vim motion is the true power, it can be a lot at first, but it is surprisingly straight forward:
+
+## Basic motion
+
+left down up right with `hjkl`
+
+### `action`
+
+Delete a line with `dd`. It then saves it to a clipboard buffer
+(think \<C-x>, or `Cut`).
+
+To `paste`, <d>
+
+#### Example:
+
+Delete this line 1
+
+### `count` `action`
+
+Number of times you want to do an action, and what action you are doing.
+
+`2dd`, `3dd` ...
+
+#### Example:
+
+Delete this line 1
+Delete this line 2
+Delete this line 3
+
+### `count` `action` `direction`
+
+Number of times you want to do an action, and what action you are doing, then what direction are you going?
+
+`3dj`
+
+### Example:
+
+Delete this line 1
+Delete this line 2
+Delete this line 3
+
+## Exercises:
+
+sauce:
+https://raw.githubusercontent.com/ThePrimeagen/vim-fundamentals/master/course-website/lessons/exercise-6-motions.md
+
 ### Change
 
 `c` is a powerful motion. You use it just like `d` but at the end of the
@@ -15,7 +81,7 @@ motion you are ejected from `NORMAL` and into `INSERT`.
 So if you wished to delete a word and then type in a new word, `c` is a great
 habit to form.
 
-Lets see the difference
+Let's see the difference
 
 // dd this line
 // cc this line
