@@ -15,8 +15,8 @@ While you can get a GUI for it, the binary is meant to be executed in a terminal
 Should you move on and become a software dev/engr, (likely) at one point, you will have to `ssh`
 into a remote server and make some changes using Vim.
 
-For day-to-day use, I use Neovim, and for the rest of the workshop, we will be focusing more NeoVim,
-but the vim motion is the same, and personally I find Lua is a lot easier to read than VimScript.
+For day-to-day usage, I use Neovim, and for the rest of the workshop, we will be focusing more on NeoVim,
+but the **vim motion** is the same, and personally I find Lua is a lot easier to read than VimScript.
 
 Like other modern text editor, Neovim is customizable, has native support for Language Server Protocol,
 code completion, diagnostics, snippets, and a lot of community support, plugins, and rich ecosystem.
@@ -29,40 +29,47 @@ code completion, diagnostics, snippets, and a lot of community support, plugins,
 
 Vim motion is the true power, it can be a lot at first, but it is surprisingly straight forward:
 
-## Basic motion
+### Modes
+
+- `NORMAL`
+- `INSERT`
+- `VISUAL`
+- `COMMAND`
+
+### Basic motion
 
 left down up right with `hjkl`
 
-### `action`
+#### `action`
 
 Delete a line with `dd`. It then saves it to a clipboard buffer
 (think \<C-x>, or `Cut`).
 
 To `paste`, <d>
 
-#### Example:
+##### Example:
 
 Delete this line
 
-### `count` `action`
+#### `count` `action`
 
 Number of times you want to do an action, and what action you are doing.
 
 `2dd`, `3dd` ...
 
-#### Example:
+##### Example:
 
 Delete this line 1\
 Delete this line 2\
 Delete this line 3
 
-### `count` `action` `direction`
+#### `count` `action` `direction`
 
 Number of times you want to do an action, and what action you are doing, then what direction are you going?
 
 `3dj`
 
-### Example:
+##### Example:
 
 Delete this line 1\
 Delete this line 2\
