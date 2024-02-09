@@ -42,7 +42,7 @@ To `paste`, <d>
 
 #### Example:
 
-Delete this line 1
+Delete this line
 
 ### `count` `action`
 
@@ -52,8 +52,8 @@ Number of times you want to do an action, and what action you are doing.
 
 #### Example:
 
-Delete this line 1
-Delete this line 2
+Delete this line 1\
+Delete this line 2\
 Delete this line 3
 
 ### `count` `action` `direction`
@@ -64,8 +64,8 @@ Number of times you want to do an action, and what action you are doing, then wh
 
 ### Example:
 
-Delete this line 1
-Delete this line 2
+Delete this line 1\
+Delete this line 2\
 Delete this line 3
 
 ## Exercises:
